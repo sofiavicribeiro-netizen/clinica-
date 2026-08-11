@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Especialidades — Clínica Vida Nova</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.svg" alt="Logotipo Clínica Vida Nova" class="logo" />
+        <span class="clinic-name">Clínica Vida Nova</span>
+      </a>
+      <nav class="main-nav">
+        <a href="specialties.html">Especialidades</a>
+        <a href="index.html#medicos">Médicos</a>
+        <a href="index.html#depoimentos">Depoimentos</a>
+        <a href="team.html">Equipe</a>
+        <a href="patient.html" class="btn btn-ghost large">Área do Paciente</a>
+      </nav>
+      <button id="btn-agendar-specialties" class="btn btn-primary large">Agendar consulta</button>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Especialidades</h1>
+    <p class="lead">Explore nossos serviços e saiba qual especialidade atende melhor sua necessidade.</p>
+
+    <div class="cards-grid specialties-grid large">
+      <article class="card specialty">
+        <div class="icon-circle blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Clínica Geral</h3>
+        <p>Avaliação clínica completa, exames iniciais e seguimento.</p>
+        <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+      </article>
+
+      <article class="card specialty">
+        <div class="icon-circle light"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 20c4.418 0 8-3.582 8-8s-3.582-8-8-8" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Pediatria</h3>
+        <p>Atendimento infantil com foco em crescimento e imunização.</p>
+        <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+      </article>
+
+      <article class="card specialty">
+        <div class="icon-circle purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 7v10M7 12h10" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Ginecologia</h3>
+        <p>Consultas, exames preventivos e acompanhamento obstétrico.</p>
+        <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+      </article>
+
+      <article class="card specialty">
+        <div class="icon-circle green"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5v14" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Psicologia</h3>
+        <p>Terapia individual, casal e familiar.</p>
+        <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Clínica Vida Nova</strong>
+        <p>Av. Exemplo, 123 — Centro<br>Cidade - Estado</p>
+      </div>
+      <div>
+        <strong>Contato</strong>
+        <p>(11) 99999-9999<br>contato@clinicavidanova.com</p>
+      </div>
+      <div>
+        <strong>Siga-nos</strong>
+        <div class="socials">
+          <a href="#" class="social-icon">IG</a>
+          <a href="#" class="social-icon">FB</a>
+          <a href="#" class="social-icon">WA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
