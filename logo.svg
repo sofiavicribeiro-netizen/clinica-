@@ -1,0 +1,9 @@
+<!-- Logotipo simples — substitua se tiver arte própria -->
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 100 100" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Logotipo Clínica Vida Nova</title>
+  <rect width="100" height="100" rx="20" fill="#0b3d91"/>
+  <g transform="translate(18,20)" fill="#fff">
+    <path d="M32 2C27 2 22.5 5 20 9.5C17.5 5 13 2 8 2 3 2 0 6 0 10.5 0 19 32 36 32 36s32-17 32-25.5C64 6 61 2 56 2c-5 0-9.5 3-12 7.5C41.5 5 37 2 32 2z"/>
+    <circle cx="16" cy="40" r="6" fill="#6fbff6"/>
+  </g>
+</svg>
