@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Área do Paciente — Clínica Vida Nova</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.svg" alt="Logotipo Clínica Vida Nova" class="logo" />
+        <span class="clinic-name">Clínica Vida Nova</span>
+      </a>
+      <nav class="main-nav">
+        <a href="specialties.html">Especialidades</a>
+        <a href="team.html">Equipe</a>
+      </nav>
+      <a href="index.html" class="btn btn-primary large">Voltar</a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="patient-grid">
+      <aside class="card patient-sidebar">
+        <h3>Entrar</h3>
+        <form id="patient-login" class="login-form">
+          <label>CPF/Email<input type="text" name="user" required /></label>
+          <label>Senha<input type="password" name="pass" required /></label>
+          <button type="submit" class="btn btn-primary large">Entrar</button>
+          <button type="button" id="guestAccess" class="btn btn-outline large">Acessar como convidado</button>
+        </form>
+      </aside>
+
+      <section class="patient-panel card" id="patientPanel" aria-live="polite">
+        <h2>Bem-vindo(a)</h2>
+        <p class="muted">Faça login para ver seus agendamentos e histórico. Como convidado você pode agendar uma consulta.</p>
+
+        <div class="panel-actions">
+          <button class="btn btn-primary xlarge" onclick="openCalendly()">Agendar nova consulta</button>
+        </div>
+
+        <div class="bookings" id="bookingsList">
+          <h3>Seus agendamentos</h3>
+          <p class="muted">Nenhum agendamento encontrado.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Clínica Vida Nova</strong>
+        <p>Av. Exemplo, 123 — Centro<br>Cidade - Estado</p>
+      </div>
+      <div>
+        <strong>Contato</strong>
+        <p>(11) 99999-9999<br>contato@clinicavidanova.com</p>
+      </div>
+      <div>
+        <strong>Siga-nos</strong>
+        <div class="socials">
+          <a href="#" class="social-icon">IG</a>
+          <a href="#" class="social-icon">FB</a>
+          <a href="#" class="social-icon">WA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
