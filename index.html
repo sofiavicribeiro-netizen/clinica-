@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clínica Vida Nova</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.svg" alt="Logotipo Clínica Vida Nova" class="logo" />
+        <span class="clinic-name">Clínica Vida Nova</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="specialties.html">Especialidades</a>
+        <a href="#medicos">Médicos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="team.html">Equipe</a>
+        <a href="patient.html" class="btn btn-ghost large">Área do Paciente</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-agendar" class="btn btn-primary large">Agendar consulta</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-left">
+          <h1 class="title">Cuidado integral. Confiança ao seu lado.</h1>
+          <p class="subtitle">Atendimento humanizado, equipe multidisciplinar e agendamento online simplificado.</p>
+          <div class="hero-actions">
+            <button id="btn-agendar-hero" class="btn btn-primary xlarge">Agendar consulta</button>
+            <a href="specialties.html" class="btn btn-secondary large">Veja especialidades</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card promo-card">
+            <div class="promo-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden><rect x="3" y="4" width="18" height="18" rx="3" stroke="#fff" stroke-width="1.4"/><path d="M16 2v4M8 2v4" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Agende online</h3>
+              <p>Use nosso sistema de agendamento para escolher dia e horário com facilidade.</p>
+              <a href="https://calendly.com/sua-clinica" target="_blank" rel="noopener noreferrer" class="btn btn-outline large">Abrir agendamento</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="especialidades" class="container section">
+      <h2>Especialidades</h2>
+      <p class="lead">Atendimento em diversas áreas para cuidar da sua saúde.</p>
+      <div class="cards-grid specialties-grid">
+        <article class="card specialty">
+          <div class="icon-circle blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M12 2v20M2 12h20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Clínica Geral</h3>
+          <p>Avaliação, prevenção e encaminhamento.</p>
+          <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+        </article>
+
+        <article class="card specialty">
+          <div class="icon-circle light"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M12 20c4.418 0 8-3.582 8-8s-3.582-8-8-8" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Pediatria</h3>
+          <p>Cuidado para bebês, crianças e adolescentes.</p>
+          <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+        </article>
+
+        <article class="card specialty">
+          <div class="icon-circle purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M12 7v10M7 12h10" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Ginecologia</h3>
+          <p>Consulta, exames e acompanhamento feminino.</p>
+          <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+        </article>
+
+        <article class="card specialty">
+          <div class="icon-circle green"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M5 12h14M12 5v14" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Psicologia</h3>
+          <p>Atendimento clínico individual e terapia familiar.</p>
+          <button class="btn btn-outline large" onclick="openCalendly()">Agendar</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="medicos" class="container section">
+      <h2>Nossos profissionais</h2>
+      <div class="profiles-grid">
+        <div class="profile-card card">
+          <div class="avatar">DR</div>
+          <h4>Dr. Ricardo Alves</h4>
+          <p class="muted">Clínica Geral</p>
+          <button class="btn btn-primary large agendar-por-medico" data-calendly="https://calendly.com/sua-clinica">Agendar</button>
+        </div>
+
+        <div class="profile-card card">
+          <div class="avatar">MP</div>
+          <h4>Dra. Marina Pessoa</h4>
+          <p class="muted">Pediatria</p>
+          <button class="btn btn-primary large agendar-por-medico" data-calendly="https://calendly.com/sua-clinica">Agendar</button>
+        </div>
+
+        <div class="profile-card card">
+          <div class="avatar">CA</div>
+          <h4>Dra. Carla Arantes</h4>
+          <p class="muted">Ginecologia</p>
+          <button class="btn btn-primary large agendar-por-medico" data-calendly="https://calendly.com/sua-clinica">Agendar</button>
+        </div>
+      </div>
+      <p class="small-link"><a href="team.html">Ver equipe completa →</a></p>
+    </section>
+
+    <section id="depoimentos" class="container section">
+      <h2>Depoimentos</h2>
+      <div class="testimonials">
+        <div class="testimonial active card">
+          <p>"Atendimento excelente. Me senti acolhida desde a recepção."</p>
+          <span class="author">— Ana S.</span>
+        </div>
+        <div class="testimonial card">
+          <p>"Profissionais competentes e ambiente muito limpo."</p>
+          <span class="author">— João M.</span>
+        </div>
+        <div class="testimonial card">
+          <p>"Minha filha fez acompanhamento pediátrico e melhorou muito."</p>
+          <span class="author">— Paula R.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="container section contact-section">
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <h3>Endereço</h3>
+          <p>Av. Exemplo, 123 — Centro, Cidade - Estado</p>
+          <h4>Horário de Atendimento</h4>
+          <p>Seg — Sex: 08:00 — 18:00<br>Sáb: 08:00 — 12:00</p>
+          <div class="map-placeholder" role="img" aria-label="Mapa do local">
+            <svg width="100%" height="120" viewBox="0 0 200 80" fill="none"><rect width="100%" height="100%" rx="8" fill="#eef6ff"/></svg>
+          </div>
+        </div>
+
+        <div class="card contact-card">
+          <h3>Agende sua consulta</h3>
+          <p>Escolha a maneira que preferir: agendamento online ou por telefone.</p>
+          <div class="stack">
+            <button class="btn btn-primary xlarge" onclick="openCalendly()">Agendar online</button>
+            <a href="tel:+5511999999999" class="btn btn-outline large">Ligar: (11) 99999-9999</a>
+            <p class="muted">Também aceitamos mensagens por WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Clínica Vida Nova</strong>
+        <p>Av. Exemplo, 123 — Centro<br>Cidade - Estado</p>
+      </div>
+      <div>
+        <strong>Contato</strong>
+        <p>(11) 99999-9999<br>contato@clinicavidanova.com</p>
+      </div>
+      <div>
+        <strong>Siga-nos</strong>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" class="social-icon">IG</a>
+          <a href="#" aria-label="Facebook" class="social-icon">FB</a>
+          <a href="#" aria-label="WhatsApp" class="social-icon">WA</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="ano"></span> Clínica Vida Nova — Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
